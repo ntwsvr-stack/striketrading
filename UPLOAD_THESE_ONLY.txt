@@ -1,0 +1,13 @@
+Upload/replace only these files at the site root:
+- styles.css
+- index.html
+- course-trading-fundamentals.html
+- course-mt5.html
+- course-tradingview.html
+- course-price-action.html
+- course-market-structure.html
+- course-fibonacci.html
+- course-liquidity-smc.html
+- course-risk-management.html
+
+No font files are included. Fonts are loaded directly from Google Fonts using <link> tags for better iOS/Safari reliability.

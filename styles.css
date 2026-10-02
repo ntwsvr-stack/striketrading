@@ -763,3 +763,88 @@ nav a{
     font-size:10px;
   }
 }
+
+
+/* =========================================================
+   V9 SAFARI / IOS FONT CONSISTENCY FIX
+   Fonts are loaded with <link> in every HTML page.
+   ========================================================= */
+
+html, body {
+  font-family: "Noto Sans Lao", sans-serif;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+button,
+input,
+select,
+textarea,
+.hero h1,
+.hero h1 strong,
+.section h2,
+.section h2 strong,
+.lead,
+nav,
+.hero-meta span,
+.lesson p,
+.audience-card,
+.audience-card p,
+.benefit-item,
+.benefit-item p,
+.topic-card,
+.topic-card h3,
+.topic-card p,
+.course-hero p {
+  font-family: "Noto Sans Lao", sans-serif !important;
+  font-synthesis: none;
+}
+
+/* Force real requested weights instead of browser-synthesized bold */
+.hero h1,
+.hero h1 strong,
+.section h2,
+.section h2 strong {
+  font-weight: 800 !important;
+}
+
+nav,
+.btn,
+.nav-cta,
+.topic-card h3 {
+  font-weight: 700;
+}
+
+/* English display/UI font */
+.brand,
+.eyebrow,
+.kicker,
+.hero-meta b,
+.lesson h3,
+.lesson a,
+.curriculum-title small,
+.course-number,
+.back-link,
+.course-summary small,
+.course-summary span,
+.topic-no,
+.copyright {
+  font-family: "Rajdhani", "Noto Sans Lao", sans-serif !important;
+  font-synthesis: none;
+}
+
+/* iOS Safari text autosizing can otherwise alter Lao proportions */
+@supports (-webkit-touch-callout: none) {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .hero h1,
+  .hero h1 strong {
+    font-family: "Noto Sans Lao", sans-serif !important;
+    font-weight: 800 !important;
+    font-synthesis: none;
+  }
+}
