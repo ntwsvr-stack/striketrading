@@ -521,3 +521,245 @@ font:700 11px Rajdhani,sans-serif;letter-spacing:.1em;color:#879087}
   .course-bottom{align-items:flex-start;flex-direction:column}
   .syllabus-intro{align-items:flex-start;flex-direction:column}
 }
+
+
+/* =========================================================
+   V8 TYPOGRAPHY / VISUAL MATCH PATCH
+   Tuned to match the supplied STRIKE TRADING reference image
+   ========================================================= */
+
+/* Global font rendering */
+html{
+  -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
+}
+
+body{
+  font-family:"Noto Sans Lao",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  font-weight:400;
+  line-height:1.6;
+  letter-spacing:0;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+}
+
+/* Brand / English display typography */
+.brand,
+.eyebrow,
+.kicker,
+.hero-meta b,
+.hero-meta span,
+.nav-cta,
+.btn,
+.lesson h3,
+.lesson a,
+.curriculum-title small,
+.course-number,
+.back-link,
+.course-summary small,
+.course-summary span,
+.topic-no,
+.copyright{
+  font-family:"Rajdhani","Noto Sans Lao",sans-serif;
+}
+
+/* Header */
+.site-header{
+  min-height:76px;
+}
+
+.brand{
+  font-size:24px;
+  font-weight:700;
+  letter-spacing:.02em;
+}
+
+.brand span{
+  display:flex;
+  align-items:baseline;
+  gap:7px;
+}
+
+.brand b{
+  font-weight:700;
+}
+
+nav{
+  font-size:14px;
+  font-weight:600;
+}
+
+nav a{
+  white-space:nowrap;
+}
+
+/* Hero title: match the heavy, compact Lao display in the reference */
+.hero h1{
+  font-family:"Noto Sans Lao",system-ui,sans-serif;
+  font-weight:800;
+  font-size:clamp(66px,7.4vw,110px);
+  line-height:.98;
+  letter-spacing:-.055em;
+  margin:20px 0 18px;
+}
+
+.hero h1 strong{
+  font-family:"Noto Sans Lao",system-ui,sans-serif;
+  font-weight:800;
+  letter-spacing:-.055em;
+}
+
+.eyebrow{
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.18em;
+}
+
+.lead{
+  font-size:17px;
+  line-height:1.9;
+  font-weight:400;
+  color:#a8afa9;
+  max-width:760px;
+}
+
+.btn{
+  min-width:170px;
+  height:54px;
+  padding:0 28px;
+  font-size:14px;
+  font-weight:700;
+}
+
+.btn.primary{
+  font-family:"Noto Sans Lao","Rajdhani",sans-serif;
+  font-weight:700;
+}
+
+.hero-meta{
+  margin-top:48px;
+  padding-top:28px;
+}
+
+.hero-meta b{
+  font-size:24px;
+  line-height:1;
+  font-weight:700;
+}
+
+.hero-meta span{
+  font-family:"Noto Sans Lao",system-ui,sans-serif;
+  font-size:11px;
+  line-height:1.5;
+  letter-spacing:.02em;
+  text-transform:none;
+}
+
+/* Section headings */
+.section h2,
+.course-hero h1,
+.syllabus-intro h2{
+  font-family:"Noto Sans Lao","Rajdhani",sans-serif;
+  font-weight:800;
+  letter-spacing:-.04em;
+}
+
+.section h2{
+  line-height:1.02;
+}
+
+/* Cards */
+.lesson h3{
+  font-size:23px;
+  font-weight:700;
+  letter-spacing:0;
+}
+
+.lesson p,
+.audience-card p,
+.benefit-item p,
+.topic-card p{
+  font-family:"Noto Sans Lao",system-ui,sans-serif;
+  font-weight:400;
+}
+
+.lesson p{
+  font-size:13px;
+  line-height:1.85;
+}
+
+.lesson a{
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.11em;
+}
+
+/* Course detail pages */
+.course-hero h1{
+  font-family:"Rajdhani","Noto Sans Lao",sans-serif;
+  font-weight:700;
+  letter-spacing:-.03em;
+}
+
+.course-hero p{
+  font-family:"Noto Sans Lao",system-ui,sans-serif;
+  font-size:15px;
+  line-height:1.9;
+}
+
+.topic-card h3{
+  font-family:"Noto Sans Lao","Rajdhani",sans-serif;
+  font-weight:700;
+  font-size:16px;
+}
+
+/* Keep UI stable across Safari / Chrome / Edge / Firefox */
+@supports ((-webkit-font-smoothing:antialiased)){
+  body{
+    -webkit-font-smoothing:antialiased;
+  }
+}
+
+@media(max-width:980px){
+  .hero h1{
+    font-size:clamp(58px,10vw,86px);
+    letter-spacing:-.045em;
+  }
+}
+
+@media(max-width:620px){
+  .brand{
+    font-size:19px;
+  }
+
+  .hero h1{
+    font-size:clamp(48px,14vw,68px);
+    line-height:1;
+    letter-spacing:-.04em;
+  }
+
+  .lead{
+    font-size:14px;
+    line-height:1.8;
+  }
+
+  .btn{
+    min-width:0;
+    height:50px;
+    font-size:13px;
+  }
+
+  .hero-meta{
+    gap:18px;
+    margin-top:34px;
+  }
+
+  .hero-meta b{
+    font-size:19px;
+  }
+
+  .hero-meta span{
+    font-size:10px;
+  }
+}
