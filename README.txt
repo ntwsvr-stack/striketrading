@@ -1,21 +1,10 @@
-STRIKE TRADING — Website Draft V4
+STRIKE TRADING — Website Draft V7
 
-Added in V4:
-- "Who is this for?" section
-  • Complete beginners
-  • People who have traded but have no clear system
-  • People overloaded by mixed information
-  • People who want stronger risk-management foundations
-- "What you will get" section
-  • Platform understanding
-  • Chart reading
-  • Market structure
-  • Fibonacci / Liquidity / SMC context
-  • Entry / SL / TP construction
-  • Lot & risk management
-  • Trading Plan / Journal
-- Added a clear statement that the outcome is a repeatable trading workflow, not guaranteed profit.
-- Updated navigation links to the new sections.
-- Hero secondary CTA now leads visitors to "Who is this for?"
-
-EA / Signal / AI remain excluded.
+Changes:
+- Main STRIKE TRADING logo is now used as favicon on every HTML page.
+- Added favicon.ico plus common PNG sizes and Apple touch icon.
+- All "ສະໝັກຮຽນ" (Enroll) buttons now open:
+  https://lin.ee/rWtGvMU
+- All "ສອບຖາມຫຼັກສູດ" (Course inquiry) buttons now open the same LINE link.
+- External LINE links open in a new tab with rel="noopener noreferrer".
+- Applies to homepage and all 8 course pages.
